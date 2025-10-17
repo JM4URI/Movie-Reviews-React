@@ -1,0 +1,62 @@
+/* Usamos el import simple que funciona en tu portafolio */
+@import "tailwindcss";
+
+/* -------------------------------------------------------------------
+   DEFINICIONES GLOBALES, ANIMACIONES Y CLASES PERSONALIZADAS 
+   ------------------------------------------------------------------- */
+
+/* 1. Estilos Base Globales */
+body {
+    /* Aplicamos el color de fondo para todo el sitio */
+    background-color: #0F172A; /* Usamos el valor directo de dark-900 */
+    color: white;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Aplicamos la utilidad de Tailwind para scroll suave */
+    @apply scroll-smooth; 
+}
+
+/* 2. Clases de Componentes con @apply */
+
+/* Contenedor utilizado en Home.tsx */
+.container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Clase de botón base utilizada en el manejo de errores */
+.btn-primary {
+    @apply inline-flex items-center justify-center font-semibold rounded-lg transition-all duration-300;
+}
+
+
+/* 3. Animaciones Personalizadas (Como en tu portafolio) */
+
+/* Definición de Fade In Up */
+@keyframes fade-in-up {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+/* Definición de Bounce Slow */
+@keyframes bounce-slow {
+    0%, 100% { transform: translateY(-10%); }
+    50% { transform: translateY(10%); }
+}
+/* Definición de Blob */
+@keyframes blob {
+    0% { transform: translate(0px, 0px) scale(1) }
+    33% { transform: translate(30px, -50px) scale(1.1) }
+    66% { transform: translate(-20px, 20px) scale(0.9) }
+    100% { transform: translate(0px, 0px) scale(1) }
+}
+
+/* Clases de Aplicación de Animación */
+.animate-fade-in-up {
+    animation: fade-in-up 0.5s ease-out forwards;
+}
+.animate-bounce-slow {
+    animation: bounce-slow 3s infinite;
+}
+.animate-blob-lg {
+    animation: blob 7s infinite cubic-bezier(0.4, 0, 0.6, 1);
+}
