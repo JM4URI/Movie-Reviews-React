@@ -26,17 +26,24 @@ export const MovieList = ({ type, title }: MovieListProps) => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [hasMore, setHasMore] = useState(true);
-  const observer = useRef<IntersectionObserver>();
+  const observer = useRef<IntersectionObserver | null>(null);
 
   const lastMovieElementRef = useCallback((node: HTMLDivElement) => {
     if (loading) return;
-    if (observer.current) observer.current.disconnect();
+
+    if (observer.current) {
+      observer.current.disconnect();
+    }
+
     observer.current = new IntersectionObserver(entries => {
       if (entries[0].isIntersecting && hasMore) {
         setPage(prevPage => prevPage + 1);
       }
     });
-    if (node) observer.current.observe(node);
+
+    if (node) {
+      observer.current.observe(node);
+    }
   }, [loading, hasMore]);
 
   useEffect(() => {
