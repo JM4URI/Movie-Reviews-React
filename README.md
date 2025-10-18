@@ -90,3 +90,16 @@ c:/Portafolios/movie-reviews-react/
 ├── package.json        # Dependencias y scripts del proyecto
 └── README.md           # Este archivo
 ```
+
+## Imagenes
+<img width="1359" height="686" alt="image" src="https://github.com/user-attachments/assets/2b91c41f-41d0-4607-9ed1-b0fda1aed21e" />
+<img width="1359" height="679" alt="image" src="https://github.com/user-attachments/assets/a8cd0dff-e70e-47fb-ac7b-f0b3eb8dc102" />
+<img width="1359" height="688" alt="image" src="https://github.com/user-attachments/assets/b46c5915-af2c-490c-a75b-932902f37f2a" />
+<img width="1359" height="685" alt="image" src="https://github.com/user-attachments/assets/f994cea4-a5cb-4321-8643-162ebe7fefb7" />
+<img width="1359" height="685" alt="image" src="https://github.com/user-attachments/assets/ed14b871-e8d7-403b-ac4e-982c26846fdc" />
+<img width="1359" height="686" alt="image" src="https://github.com/user-attachments/assets/6413bfa2-b222-44dc-81e2-5cdb1285532c" />
+
+
+
+
+
